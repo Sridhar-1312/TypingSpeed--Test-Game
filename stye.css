@@ -22,11 +22,49 @@ body {
   padding: 13px 20px 0;
   border-radius: 10px;
 }
+.wrapper .input-feild{
+    position: absolute;
+    z-index: -999;
+    opacity: 0;
+}
 .typing-text p {
   font-size: 21px;
   text-align: justify;
   letter-spacing: 1px;
   word-break: break-all;
+}
+.typing-text p span{
+    position: relative;
+}
+.typing-text p span.correct{
+    color: green;
+}
+.typing-text p span.incorrect{
+    color: red;
+    background: pink;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+
+}
+.typing-text p span .active{
+    color: #17a2b8;
+}
+.typing-text p span.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background: #17a2b8;
+    animation: blink 0.9s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+
 }
 .content-box .typing-text {
   max-height: 255px;
