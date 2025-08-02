@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17a2b8;
+}
+.wrapper {
+  background: #fff;
+  width: 770px;
+  padding: 35px;
+  border-radius: 10px;
+}
+.wrapper .content-box {
+  border: 1px solid #ccc;
+  padding: 13px 20px 0;
+  border-radius: 10px;
+}
+.typing-text p {
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+.content-box .typing-text {
+  max-height: 255px;
+  overflow-y: auto;
+}
+.typing-text::-webkit-scrollbar {
+  display: none;
+}
+.content-box .content {
+  padding: 14px 0;
+  margin-top: 17px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.content .result-details {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 140px);
+}
+.result-details li{
+  display: flex;
+  list-style: none; 
+  align-items: center;
+  height: 25px;
+}
+.result-details li:not(:first-child){
+    border-left: 1px solid #ccc;
+    padding-left:22px ;
+}
+.result-details li p{
+  font-size: 19px;
+}
+.result-details li span{
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+  
+}
+.result-details li:not(:first-child) span{
+    font-weight: 500;
+}
+.result-details li b{
+    font-weight: 500;
+} 
+.content button{
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #17a2b8;
+    color: #fff;
+    font-weight: 600;
+    width: 105px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.content button:active{
+    transform: scale(0.97);
+}
