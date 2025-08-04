@@ -50,7 +50,7 @@ body {
     color: #17a2b8;
 }
 .typing-text p span.active::before{
-    content: "";
+    content:"";
     position: absolute;
     left: 0;
     bottom: 0;
